@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-image: url("bru.");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        #div{
+            
+            padding: 30px;
+            margin: 150px 40px 40px 40px;
+            background-color: rgba(245, 245, 245, 0.845);
+            height: 300px;
+            width: 350px;
+            align-items: center;
+            border: 5px solid;
+            border-radius: 10px;
+        }
+        label{
+            padding: 2px;
+        }
+        input,select{
+            margin-bottom:5px ;
+            border:2px solid rgb(45, 7, 7);
+            border-radius: 5px;
+            padding: 2px;
+        }
+         .error{
+            color: red;
+         }
+    </style>
+  </head>
+  <body >
+    <div id="div">
+      <h3>Don't have an account ?! Want to <br />join us</h3>
+
+      <form name="myform" onsubmit="return(validation());">
+        <label id="label">Name</label><br />
+        <input  id="input" 
+          type="text"
+          name="username"
+          placeholder="First Name Last Name"
+        />
+        <span id="errorname" class="error"></span>
+        <br />
+
+        <label id="label" id="label">Email ID:</label><br />
+        <input type="email" name="email" placeholder="Email ID" id="input" /><br />
+        <span id="erroremail" class="error"></span>
+        <br />
+
+        <label  id="label" name="city">Select city:</label><br />
+        <select>
+          <option>select your city</option>
+          <option>jalandhar</option>
+          <option>ludhiyana</option>
+          <option>chandigarh</option>
+        </select>
+        <span id="errorcity" class="error"></span>
+
+        <br />
+
+        <label id="label">Gender: </label>
+        <input type="radio" name="gender" id="input"  />male
+        <input type="radio" name="gender" id="input"  />female
+        <input type="radio" name="gender"  id="input" />other
+        <span id="errorgender" class="error"></span>
+        <br />
+
+
+        <label id="label">Password</label><br />
+        <input type="password" name="password" palceholder="Password"  id="input" />
+        <br />
+        <input type="checkbox"  id="input"  />I agree to terms and conditions <span></span><br />
+        <input type="submit" value="submit" name="submit"  id="input"  />
+        <input type="" value="Reset" name="reset"  id="input"  />
+      </form>
+    </div>
+    <script>
+        function validation(){
+            var isValid =true;
+            if(document.myform.username.value==""){
+        document.getElementById("errorname").innerHTML="*Name cannot be blank";
+        isValid= false;       
+            }
+            else{
+        document.getElementById("errorname").innerHTML= "";     
+        isValid= true;   
+            }
+            
+            if(document.myform.email.value==""){
+        document.getElementById("erroremail").innerHTML="*Email cannot be blank";
+        isValid= false;       
+            }
+            else{
+        document.getElementById("erroremail").innerHTML= "";     
+        isValid= true;   
+            }
+
+            if(document.myform.city.value==""){
+        document.getElementById("errorcity").innerHTML="*Name cannot be blank";
+        isValid= false;       
+            }
+            else{
+        document.getElementById("errorname").innerHTML= "";     
+        isValid= true;   
+            }
+            
+
+
+            return isValid;
+        }
+        
+    </script>
+  </body>
+</html>

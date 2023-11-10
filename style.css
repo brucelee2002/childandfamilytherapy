@@ -1,0 +1,141 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        background-color: #111;
+      }
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .centered {
+        position: absolute;
+        top: 40%;
+        left: 27%;
+        
+      }
+
+      .centered h1{
+        color: rgb(255, 134, 154);
+        font-size: 45px;
+        background-color: white;
+    }
+    .centered p{
+        font-size: 35px;
+        color: rgb(66, 169, 169);
+        background-color: white;
+        padding: 0 0px 0 0px;
+      }
+
+      .btn {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        border-radius: 13px;
+      }
+      .btn:hover{
+        background-color: #83df86;
+      }
+
+      .container1,.container2,.container3,.container4{
+        text-align: center;
+        margin-top: 110px;
+    }
+     .container2{
+      background-color: rgb(245, 239, 233);
+    
+     }
+   
+    
+    .services{
+        display: flex;
+        margin-top: 70px;
+        
+        }
+
+        .service1,.service2,.service3{
+            margin-left: 40px;
+        }
+
+
+   
+    .pricing1 p ,.pricing2 p ,.pricing3 p ,.pricing4 p{
+      margin-top: 80px;
+      margin-bottom: 50px;
+    }
+    .row1{
+      display: flex;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin-left: 180px;
+    }
+    th{
+      width: 240px;
+      height: 350px;
+    }
+
+    .img{
+      height: 220px;
+      width: 220px;
+      border-radius: 15px;
+    }
+
+     #div{
+            
+            padding: 30px;
+            margin: 150px 40px 40px 440px;
+            background-color: rgba(245, 245, 245, 0.845);
+            height: 360px;
+            width: 350px;
+            align-items: center;
+            border: 5px solid;
+            border-radius: 10px;
+        }
+        label{
+            padding: 2px;
+        }
+        input,select{
+            margin-bottom:5px ;
+            border:2px solid rgb(45, 7, 7);
+            border-radius: 5px;
+            padding: 2px;
+        }
+         
+
+
+   
+
+    
